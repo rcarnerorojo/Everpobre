@@ -13,6 +13,13 @@
 		E6AA09AA1A7F916C0093423A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AA09A81A7F916C0093423A /* LaunchScreen.xib */; };
 		E6AA09B61A7F916C0093423A /* EverpobreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09B51A7F916C0093423A /* EverpobreTests.m */; };
 		E6AA09C11A7F95810093423A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09BF1A7F95810093423A /* Model.xcdatamodeld */; };
+		E6AA09D81A7FAB470093423A /* _RCRNote.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09CD1A7FAB470093423A /* _RCRNote.m */; };
+		E6AA09D91A7FAB470093423A /* _RCRNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09CF1A7FAB470093423A /* _RCRNotebook.m */; };
+		E6AA09DA1A7FAB470093423A /* _RCRPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09D11A7FAB470093423A /* _RCRPhotoContainer.m */; };
+		E6AA09DB1A7FAB470093423A /* RCRNote.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09D31A7FAB470093423A /* RCRNote.m */; };
+		E6AA09DC1A7FAB470093423A /* RCRNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09D51A7FAB470093423A /* RCRNotebook.m */; };
+		E6AA09DD1A7FAB470093423A /* RCRPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09D71A7FAB470093423A /* RCRPhotoContainer.m */; };
+		E6DAE66F1A7FDE9C001EE7B2 /* RCRBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DAE66E1A7FDE9C001EE7B2 /* RCRBaseObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,20 @@
 		E6AA09B41A7F916C0093423A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6AA09B51A7F916C0093423A /* EverpobreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverpobreTests.m; sourceTree = "<group>"; };
 		E6AA09C01A7F95810093423A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E6AA09CC1A7FAB470093423A /* _RCRNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RCRNote.h; sourceTree = "<group>"; };
+		E6AA09CD1A7FAB470093423A /* _RCRNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RCRNote.m; sourceTree = "<group>"; };
+		E6AA09CE1A7FAB470093423A /* _RCRNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RCRNotebook.h; sourceTree = "<group>"; };
+		E6AA09CF1A7FAB470093423A /* _RCRNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RCRNotebook.m; sourceTree = "<group>"; };
+		E6AA09D01A7FAB470093423A /* _RCRPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RCRPhotoContainer.h; sourceTree = "<group>"; };
+		E6AA09D11A7FAB470093423A /* _RCRPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RCRPhotoContainer.m; sourceTree = "<group>"; };
+		E6AA09D21A7FAB470093423A /* RCRNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRNote.h; sourceTree = "<group>"; };
+		E6AA09D31A7FAB470093423A /* RCRNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRNote.m; sourceTree = "<group>"; };
+		E6AA09D41A7FAB470093423A /* RCRNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRNotebook.h; sourceTree = "<group>"; };
+		E6AA09D51A7FAB470093423A /* RCRNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRNotebook.m; sourceTree = "<group>"; };
+		E6AA09D61A7FAB470093423A /* RCRPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRPhotoContainer.h; sourceTree = "<group>"; };
+		E6AA09D71A7FAB470093423A /* RCRPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRPhotoContainer.m; sourceTree = "<group>"; };
+		E6DAE66D1A7FDE9C001EE7B2 /* RCRBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRBaseObject.h; sourceTree = "<group>"; };
+		E6DAE66E1A7FDE9C001EE7B2 /* RCRBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRBaseObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +138,31 @@
 		E6AA09C21A7F95880093423A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E6AA09DE1A7FABEA0093423A /* Machine */,
+				E6AA09D21A7FAB470093423A /* RCRNote.h */,
+				E6AA09D31A7FAB470093423A /* RCRNote.m */,
+				E6AA09D41A7FAB470093423A /* RCRNotebook.h */,
+				E6AA09D51A7FAB470093423A /* RCRNotebook.m */,
+				E6AA09D61A7FAB470093423A /* RCRPhotoContainer.h */,
+				E6AA09D71A7FAB470093423A /* RCRPhotoContainer.m */,
 				E6AA09BF1A7F95810093423A /* Model.xcdatamodeld */,
+				E6DAE66D1A7FDE9C001EE7B2 /* RCRBaseObject.h */,
+				E6DAE66E1A7FDE9C001EE7B2 /* RCRBaseObject.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		E6AA09DE1A7FABEA0093423A /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				E6AA09CC1A7FAB470093423A /* _RCRNote.h */,
+				E6AA09CD1A7FAB470093423A /* _RCRNote.m */,
+				E6AA09CE1A7FAB470093423A /* _RCRNotebook.h */,
+				E6AA09CF1A7FAB470093423A /* _RCRNotebook.m */,
+				E6AA09D01A7FAB470093423A /* _RCRPhotoContainer.h */,
+				E6AA09D11A7FAB470093423A /* _RCRPhotoContainer.m */,
+			);
+			name = Machine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,8 +265,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AA09DC1A7FAB470093423A /* RCRNotebook.m in Sources */,
 				E6AA09A51A7F916C0093423A /* AppDelegate.m in Sources */,
+				E6AA09D81A7FAB470093423A /* _RCRNote.m in Sources */,
+				E6AA09DB1A7FAB470093423A /* RCRNote.m in Sources */,
+				E6AA09D91A7FAB470093423A /* _RCRNotebook.m in Sources */,
+				E6DAE66F1A7FDE9C001EE7B2 /* RCRBaseObject.m in Sources */,
+				E6AA09DD1A7FAB470093423A /* RCRPhotoContainer.m in Sources */,
 				E6AA09A21A7F916C0093423A /* main.m in Sources */,
+				E6AA09DA1A7FAB470093423A /* _RCRPhotoContainer.m in Sources */,
 				E6AA09C11A7F95810093423A /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +457,7 @@
 				E6AA09BB1A7F916C0093423A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6AA09BC1A7F916C0093423A /* Build configuration list for PBXNativeTarget "EverpobreTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +466,7 @@
 				E6AA09BE1A7F916C0093423A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
