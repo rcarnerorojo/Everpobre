@@ -9,6 +9,7 @@
 #import "RCRNotesViewController.h"
 #import "RCRNote.h"
 #import "RCRPhotoContainer.h"
+#import "RCRNoteViewController.h"
 
 @implementation RCRNotesViewController
 
@@ -67,6 +68,20 @@
 -(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return @"Remove";
+}
+
+#pragma mark - Table Delegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    //Averiguar cuál es la nota
+    RCRNote *nb = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    //Crear un CharacterVC
+    RCRNoteViewController *nVC = [[RCRNoteViewController alloc]initWithNote:nb];
+    
+    //Lo pusheo
+    [self.navigationController pushViewController:nVC animated:YES];
 }
 
 #pragma mark - Actions

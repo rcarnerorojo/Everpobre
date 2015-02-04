@@ -87,10 +87,9 @@
     
     RCRNotebook *nb = [RCRNotebook notebookWithName:@"Ex-novias para el recuerdo" context:self.stack.context];
     
-    RCRNote *n = [RCRNote noteWithName:@"Mariana Dávalos"
+    [RCRNote noteWithName:@"Mariana Dávalos"
                  notebook:nb
                   context:self.stack.context];
-    [n.photo setImage:[UIImage imageNamed:@"dark-sea-16914"]];
     
     [RCRNote noteWithName:@"Camila Dávalos"
                  notebook:nb
