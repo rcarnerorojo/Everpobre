@@ -10,6 +10,8 @@
 #import "AGTCoreDataStack.h"
 #import "RCRNote.h"
 #import "RCRNotebook.h"
+#import "RCRNotebooksViewController.h"
+#import "UIViewController+RCRNavigation.h"
 
 @interface AppDelegate ()
 @property (nonatomic,strong)AGTCoreDataStack *stack;
@@ -20,14 +22,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
+     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     //Creamos el stack
     self.stack = [AGTCoreDataStack coreDataStackWithModelName:@"Model"];
     
     //Creamos datos chorras
     [self createDummyData];
-    [self trastearConDatos];
+
+    //Cramos el conjunto de datos
+    NSFetchRequest *r = [NSFetchRequest fetchRequestWithEntityName:[RCRNotebook entityName]];
+    r.fetchBatchSize = 30;
+    r.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:RCRNotebookAttributes.name ascending:YES selector:@selector(caseInsensitiveCompare:)],
+                          [NSSortDescriptor sortDescriptorWithKey:RCRNotebookAttributes.modificationDate ascending:NO]];
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:r managedObjectContext:self.stack.context sectionNameKeyPath:nil cacheName:nil];
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //Creamos el controlador
+    RCRNotebooksViewController *nbVC = [[RCRNotebooksViewController alloc] initWithFetchedResultsController:fc style:UITableViewStylePlain];
+    
+/*    //Lo metemos en un NavigationController
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:nbVC];
+
+    //Lo mostramos
+    self.window.rootViewController = nav;
+*/
+    //Utilizamos la catergoría para envolver el controlador en un navigation
+    self.window.rootViewController = [nbVC rcrWrapperInNavigation];
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -63,7 +84,7 @@
     //para borrar todos los datos
     [self.stack zapAllData];
     
-    RCRNotebook *nb = [RCRNotebook notebookWithName:@"Ex-novaias para el recuerdo" context:self.stack.context];
+    RCRNotebook *nb = [RCRNotebook notebookWithName:@"Ex-novias para el recuerdo" context:self.stack.context];
     
     [RCRNote noteWithName:@"Mariana Dávalos"
                  notebook:nb

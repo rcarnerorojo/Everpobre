@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Everpobre/AppDelegate.m"
-            timestampString = "444663133.564081"
+            timestampString = "444743977.497487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "-trastearConDatos"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Everpobre/AppDelegate.m"
-            timestampString = "444695087.767717"
+            timestampString = "444743977.497487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "-trastearConDatos"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Everpobre/AppDelegate.m"
-            timestampString = "444695087.767717"
+            timestampString = "444743977.497487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "-trastearConDatos"
             landmarkType = "5">
          </BreakpointContent>
