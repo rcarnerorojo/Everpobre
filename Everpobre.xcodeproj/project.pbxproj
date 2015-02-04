@@ -20,6 +20,7 @@
 		E6AA09DC1A7FAB470093423A /* RCRNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09D51A7FAB470093423A /* RCRNotebook.m */; };
 		E6AA09DD1A7FAB470093423A /* RCRPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09D71A7FAB470093423A /* RCRPhotoContainer.m */; };
 		E6DAE66F1A7FDE9C001EE7B2 /* RCRBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DAE66E1A7FDE9C001EE7B2 /* RCRBaseObject.m */; };
+		E6E0F1451A80D6DB004A3580 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E0F1441A80D6DB004A3580 /* AGTCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		E6AA09D71A7FAB470093423A /* RCRPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRPhotoContainer.m; sourceTree = "<group>"; };
 		E6DAE66D1A7FDE9C001EE7B2 /* RCRBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRBaseObject.h; sourceTree = "<group>"; };
 		E6DAE66E1A7FDE9C001EE7B2 /* RCRBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRBaseObject.m; sourceTree = "<group>"; };
+		E6E0F1431A80D6DB004A3580 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
+		E6E0F1441A80D6DB004A3580 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 		E6AA09C21A7F95880093423A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E6E0F1431A80D6DB004A3580 /* AGTCoreDataStack.h */,
+				E6E0F1441A80D6DB004A3580 /* AGTCoreDataStack.m */,
 				E6AA09DE1A7FABEA0093423A /* Machine */,
 				E6AA09D21A7FAB470093423A /* RCRNote.h */,
 				E6AA09D31A7FAB470093423A /* RCRNote.m */,
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E0F1451A80D6DB004A3580 /* AGTCoreDataStack.m in Sources */,
 				E6AA09DC1A7FAB470093423A /* RCRNotebook.m in Sources */,
 				E6AA09A51A7F916C0093423A /* AppDelegate.m in Sources */,
 				E6AA09D81A7FAB470093423A /* _RCRNote.m in Sources */,
