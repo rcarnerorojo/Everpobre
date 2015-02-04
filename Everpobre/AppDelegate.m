@@ -12,6 +12,7 @@
 #import "RCRNotebook.h"
 #import "RCRNotebooksViewController.h"
 #import "UIViewController+RCRNavigation.h"
+#import "RCRPhotoContainer.h"
 
 @interface AppDelegate ()
 @property (nonatomic,strong)AGTCoreDataStack *stack;
@@ -86,10 +87,11 @@
     
     RCRNotebook *nb = [RCRNotebook notebookWithName:@"Ex-novias para el recuerdo" context:self.stack.context];
     
-    [RCRNote noteWithName:@"Mariana Dávalos"
+    RCRNote *n = [RCRNote noteWithName:@"Mariana Dávalos"
                  notebook:nb
                   context:self.stack.context];
-
+    [n.photo setImage:[UIImage imageNamed:@"dark-sea-16914"]];
+    
     [RCRNote noteWithName:@"Camila Dávalos"
                  notebook:nb
                   context:self.stack.context];

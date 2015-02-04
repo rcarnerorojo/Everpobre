@@ -8,6 +8,8 @@
 
 #import "RCRNotebooksViewController.h"
 #import "RCRNotebook.h"
+#import "RCRNotesViewController.h"
+#import "RCRNote.h"
 
 @interface RCRNotebooksViewController ()
 
@@ -37,7 +39,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     //Reuse Id
-    static NSString *cellId = @"NotebookId";
+    static NSString *cellId = @"notebookCell";
     
     // Averiguar de qué libreta me están hablando
     RCRNotebook *nb = [self.fetchedResultsController objectAtIndexPath:indexPath];
@@ -81,12 +83,40 @@
     return @"Remove";
 }
 
+#pragma mark - Table Delegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+ 
+    //Averiguar cuál es la libreta
+    RCRNotebook *nb = [self.fetchedResultsController objectAtIndexPath:indexPath];
+
+    //Creo la selección de datos
+    NSFetchRequest *r = [NSFetchRequest fetchRequestWithEntityName:[RCRNote entityName]];
+    r.fetchBatchSize = 30;
+    r.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:RCRNotebookAttributes.name ascending:YES selector:@selector(caseInsensitiveCompare:)],
+                          [NSSortDescriptor sortDescriptorWithKey:RCRNotebookAttributes.modificationDate ascending:NO]];
+    r.predicate = [NSPredicate predicateWithFormat:@"notebook == %@", nb];
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc]initWithFetchRequest:r
+                                                                        managedObjectContext:self.fetchedResultsController.managedObjectContext
+                                                                          sectionNameKeyPath:nil
+                                                                                   cacheName:nil];
+    //Creo una instancia de controlador de notas
+    RCRNotesViewController *nVC = [[RCRNotesViewController alloc]initWithFetchedResultsController:fc
+                                                                                            style:UITableViewStylePlain];
+    //Asignamos el notebook
+    [nVC setNotebook:nb];
+    
+    //Lo pusheo
+    [self.navigationController pushViewController:nVC animated:YES];
+    
+}
+
 #pragma mark - Actions
 
 -(void) addNotebook:(id) sender{
     
     [RCRNotebook notebookWithName:@"Nueva libreta" context:self.fetchedResultsController.managedObjectContext];
-    
+
 }
 
 
