@@ -10,6 +10,7 @@
 #import "RCRNotebook.h"
 #import "RCRNotesViewController.h"
 #import "RCRNote.h"
+#import "RCRNotebookTableViewCell.h"
 
 @interface RCRNotebooksViewController ()
 
@@ -27,6 +28,9 @@
 
     self.navigationItem.rightBarButtonItem = addBtn;
     
+    //Registramos el nib de la celda
+    UINib *nib = [UINib nibWithNibName:@"RCRNotebookTableViewCell" bundle:[NSBundle mainBundle]];
+    [self.tableView registerNib:nib forCellReuseIdentifier:[RCRNotebookTableViewCell cellId]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,28 +43,30 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     //Reuse Id
-    static NSString *cellId = @"notebookCell";
+    //static NSString *cellId = @"notebookCell";
     
     // Averiguar de qué libreta me están hablando
     RCRNotebook *nb = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     //crear una celda (nos mandará una de la caché)
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    
-    if (cell == nil){//no hay celdas de este tipo en caché
-        //tengo que crear la celda a pelo
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
-    }
+    RCRNotebookTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[RCRNotebookTableViewCell cellId] forIndexPath:indexPath];
+
+    //ya nunca me devolverá nil
+//    if (cell == nil){//no hay celdas de este tipo en caché
+//        //tengo que crear la celda a pelo
+//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
+//    }
     
     //sincronizar modelo (libreta) -> vista (celda)
-    cell.textLabel.text = nb.name;
-    
-    NSDateFormatter *fmt = [NSDateFormatter new];
-    fmt.dateStyle = NSDateFormatterShortStyle;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%lu notes)",[fmt stringFromDate:nb.modificationDate],(unsigned long)nb.notes.count];
+    cell.nameView.text = nb.name;
+    cell.notesView.text = [NSString stringWithFormat:@"%lu",nb.notes.count];
     
     //la devuelvo
     return cell;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [RCRNotebookTableViewCell height];
 }
 
 -(void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{

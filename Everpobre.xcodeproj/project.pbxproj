@@ -20,6 +20,19 @@
 		E6AA09DC1A7FAB470093423A /* RCRNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09D51A7FAB470093423A /* RCRNotebook.m */; };
 		E6AA09DD1A7FAB470093423A /* RCRPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA09D71A7FAB470093423A /* RCRPhotoContainer.m */; };
 		E6DAE66F1A7FDE9C001EE7B2 /* RCRBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DAE66E1A7FDE9C001EE7B2 /* RCRBaseObject.m */; };
+		E6DCB66D1A836E4500380329 /* RCRNotebookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DCB66B1A836E4500380329 /* RCRNotebookTableViewCell.m */; };
+		E6DCB66E1A836E4500380329 /* RCRNotebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6DCB66C1A836E4500380329 /* RCRNotebookTableViewCell.xib */; };
+		E6DCB6721A83781300380329 /* RCRPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DCB6701A83781300380329 /* RCRPhotoTableViewCell.m */; };
+		E6DCB6731A83781300380329 /* RCRPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6DCB6711A83781300380329 /* RCRPhotoTableViewCell.xib */; };
+		E6DCB6771A83794700380329 /* RCRTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DCB6751A83794700380329 /* RCRTextTableViewCell.m */; };
+		E6DCB6781A83794700380329 /* RCRTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6DCB6761A83794700380329 /* RCRTextTableViewCell.xib */; };
+		E6DCB67C1A837AEE00380329 /* RCRDatesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DCB67A1A837AEE00380329 /* RCRDatesTableViewCell.m */; };
+		E6DCB67D1A837AEE00380329 /* RCRDatesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6DCB67B1A837AEE00380329 /* RCRDatesTableViewCell.xib */; };
+		E6DCB6811A837BFF00380329 /* RCRNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DCB67F1A837BFF00380329 /* RCRNameTableViewCell.m */; };
+		E6DCB6821A837BFF00380329 /* RCRNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6DCB6801A837BFF00380329 /* RCRNameTableViewCell.xib */; };
+		E6DCB6851A837D8A00380329 /* RCRNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DCB6841A837D8A00380329 /* RCRNoteViewController.m */; };
+		E6DCB6891A83A70600380329 /* RCRPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DCB6871A83A70600380329 /* RCRPhotoViewController.m */; };
+		E6DCB68A1A83A70600380329 /* RCRPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6DCB6881A83A70600380329 /* RCRPhotoViewController.xib */; };
 		E6DF70A71A821FA400B68EAE /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DF70A61A821FA400B68EAE /* AGTCoreDataTableViewController.m */; };
 		E6DF70AC1A82209300B68EAE /* RCRNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DF70AA1A82209300B68EAE /* RCRNotebooksViewController.m */; };
 		E6DF70B11A823E2000B68EAE /* UIViewController+RCRNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DF70B01A823E2000B68EAE /* UIViewController+RCRNavigation.m */; };
@@ -64,6 +77,26 @@
 		E6AA09D71A7FAB470093423A /* RCRPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRPhotoContainer.m; sourceTree = "<group>"; };
 		E6DAE66D1A7FDE9C001EE7B2 /* RCRBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRBaseObject.h; sourceTree = "<group>"; };
 		E6DAE66E1A7FDE9C001EE7B2 /* RCRBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRBaseObject.m; sourceTree = "<group>"; };
+		E6DCB66A1A836E4500380329 /* RCRNotebookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRNotebookTableViewCell.h; sourceTree = "<group>"; };
+		E6DCB66B1A836E4500380329 /* RCRNotebookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRNotebookTableViewCell.m; sourceTree = "<group>"; };
+		E6DCB66C1A836E4500380329 /* RCRNotebookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCRNotebookTableViewCell.xib; sourceTree = "<group>"; };
+		E6DCB66F1A83781300380329 /* RCRPhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRPhotoTableViewCell.h; sourceTree = "<group>"; };
+		E6DCB6701A83781300380329 /* RCRPhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRPhotoTableViewCell.m; sourceTree = "<group>"; };
+		E6DCB6711A83781300380329 /* RCRPhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCRPhotoTableViewCell.xib; sourceTree = "<group>"; };
+		E6DCB6741A83794700380329 /* RCRTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRTextTableViewCell.h; sourceTree = "<group>"; };
+		E6DCB6751A83794700380329 /* RCRTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRTextTableViewCell.m; sourceTree = "<group>"; };
+		E6DCB6761A83794700380329 /* RCRTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCRTextTableViewCell.xib; sourceTree = "<group>"; };
+		E6DCB6791A837AEE00380329 /* RCRDatesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRDatesTableViewCell.h; sourceTree = "<group>"; };
+		E6DCB67A1A837AEE00380329 /* RCRDatesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRDatesTableViewCell.m; sourceTree = "<group>"; };
+		E6DCB67B1A837AEE00380329 /* RCRDatesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCRDatesTableViewCell.xib; sourceTree = "<group>"; };
+		E6DCB67E1A837BFF00380329 /* RCRNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRNameTableViewCell.h; sourceTree = "<group>"; };
+		E6DCB67F1A837BFF00380329 /* RCRNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRNameTableViewCell.m; sourceTree = "<group>"; };
+		E6DCB6801A837BFF00380329 /* RCRNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCRNameTableViewCell.xib; sourceTree = "<group>"; };
+		E6DCB6831A837D8A00380329 /* RCRNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRNoteViewController.h; sourceTree = "<group>"; };
+		E6DCB6841A837D8A00380329 /* RCRNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRNoteViewController.m; sourceTree = "<group>"; };
+		E6DCB6861A83A70600380329 /* RCRPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRPhotoViewController.h; sourceTree = "<group>"; };
+		E6DCB6871A83A70600380329 /* RCRPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRPhotoViewController.m; sourceTree = "<group>"; };
+		E6DCB6881A83A70600380329 /* RCRPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCRPhotoViewController.xib; sourceTree = "<group>"; };
 		E6DF70A51A821FA400B68EAE /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
 		E6DF70A61A821FA400B68EAE /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		E6DF70A91A82209300B68EAE /* RCRNotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRNotebooksViewController.h; sourceTree = "<group>"; };
@@ -116,6 +149,7 @@
 		E6AA099E1A7F916C0093423A /* Everpobre */ = {
 			isa = PBXGroup;
 			children = (
+				E6DCB6691A836E1500380329 /* Views */,
 				E6DF70B51A824AF500B68EAE /* dark-sea-16914.jpg */,
 				E6DF70AE1A823DBF00B68EAE /* Categories */,
 				E6DF70A81A821FAA00B68EAE /* Controllers */,
@@ -187,6 +221,28 @@
 			name = Machine;
 			sourceTree = "<group>";
 		};
+		E6DCB6691A836E1500380329 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6DCB66A1A836E4500380329 /* RCRNotebookTableViewCell.h */,
+				E6DCB66B1A836E4500380329 /* RCRNotebookTableViewCell.m */,
+				E6DCB66C1A836E4500380329 /* RCRNotebookTableViewCell.xib */,
+				E6DCB66F1A83781300380329 /* RCRPhotoTableViewCell.h */,
+				E6DCB6701A83781300380329 /* RCRPhotoTableViewCell.m */,
+				E6DCB6711A83781300380329 /* RCRPhotoTableViewCell.xib */,
+				E6DCB6741A83794700380329 /* RCRTextTableViewCell.h */,
+				E6DCB6751A83794700380329 /* RCRTextTableViewCell.m */,
+				E6DCB6761A83794700380329 /* RCRTextTableViewCell.xib */,
+				E6DCB6791A837AEE00380329 /* RCRDatesTableViewCell.h */,
+				E6DCB67A1A837AEE00380329 /* RCRDatesTableViewCell.m */,
+				E6DCB67B1A837AEE00380329 /* RCRDatesTableViewCell.xib */,
+				E6DCB67E1A837BFF00380329 /* RCRNameTableViewCell.h */,
+				E6DCB67F1A837BFF00380329 /* RCRNameTableViewCell.m */,
+				E6DCB6801A837BFF00380329 /* RCRNameTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		E6DF70A81A821FAA00B68EAE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +252,11 @@
 				E6DF70AA1A82209300B68EAE /* RCRNotebooksViewController.m */,
 				E6DF70B21A82437300B68EAE /* RCRNotesViewController.h */,
 				E6DF70B31A82437300B68EAE /* RCRNotesViewController.m */,
+				E6DCB6831A837D8A00380329 /* RCRNoteViewController.h */,
+				E6DCB6841A837D8A00380329 /* RCRNoteViewController.m */,
+				E6DCB6861A83A70600380329 /* RCRPhotoViewController.h */,
+				E6DCB6871A83A70600380329 /* RCRPhotoViewController.m */,
+				E6DCB6881A83A70600380329 /* RCRPhotoViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -290,7 +351,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6DCB6731A83781300380329 /* RCRPhotoTableViewCell.xib in Resources */,
+				E6DCB67D1A837AEE00380329 /* RCRDatesTableViewCell.xib in Resources */,
+				E6DCB66E1A836E4500380329 /* RCRNotebookTableViewCell.xib in Resources */,
+				E6DCB6781A83794700380329 /* RCRTextTableViewCell.xib in Resources */,
+				E6DCB6821A837BFF00380329 /* RCRNameTableViewCell.xib in Resources */,
 				E6AA09AA1A7F916C0093423A /* LaunchScreen.xib in Resources */,
+				E6DCB68A1A83A70600380329 /* RCRPhotoViewController.xib in Resources */,
 				E6AA09A71A7F916C0093423A /* Images.xcassets in Resources */,
 				E6DF70B61A824AF500B68EAE /* dark-sea-16914.jpg in Resources */,
 			);
@@ -310,20 +377,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6DCB66D1A836E4500380329 /* RCRNotebookTableViewCell.m in Sources */,
 				E6E0F1451A80D6DB004A3580 /* AGTCoreDataStack.m in Sources */,
 				E6AA09DC1A7FAB470093423A /* RCRNotebook.m in Sources */,
 				E6DF70A71A821FA400B68EAE /* AGTCoreDataTableViewController.m in Sources */,
 				E6AA09A51A7F916C0093423A /* AppDelegate.m in Sources */,
 				E6AA09D81A7FAB470093423A /* _RCRNote.m in Sources */,
 				E6DF70AC1A82209300B68EAE /* RCRNotebooksViewController.m in Sources */,
+				E6DCB6891A83A70600380329 /* RCRPhotoViewController.m in Sources */,
+				E6DCB6721A83781300380329 /* RCRPhotoTableViewCell.m in Sources */,
 				E6DF70B11A823E2000B68EAE /* UIViewController+RCRNavigation.m in Sources */,
 				E6AA09DB1A7FAB470093423A /* RCRNote.m in Sources */,
 				E6AA09D91A7FAB470093423A /* _RCRNotebook.m in Sources */,
 				E6DF70B41A82437300B68EAE /* RCRNotesViewController.m in Sources */,
+				E6DCB6771A83794700380329 /* RCRTextTableViewCell.m in Sources */,
+				E6DCB67C1A837AEE00380329 /* RCRDatesTableViewCell.m in Sources */,
 				E6DAE66F1A7FDE9C001EE7B2 /* RCRBaseObject.m in Sources */,
 				E6AA09DD1A7FAB470093423A /* RCRPhotoContainer.m in Sources */,
+				E6DCB6811A837BFF00380329 /* RCRNameTableViewCell.m in Sources */,
 				E6AA09A21A7F916C0093423A /* main.m in Sources */,
 				E6AA09DA1A7FAB470093423A /* _RCRPhotoContainer.m in Sources */,
+				E6DCB6851A837D8A00380329 /* RCRNoteViewController.m in Sources */,
 				E6AA09C11A7F95810093423A /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

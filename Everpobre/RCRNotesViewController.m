@@ -9,6 +9,7 @@
 #import "RCRNotesViewController.h"
 #import "RCRNote.h"
 #import "RCRPhotoContainer.h"
+#import "RCRNoteViewController.h"
 
 @implementation RCRNotesViewController
 
@@ -76,5 +77,19 @@
     [RCRNote noteWithName:@"Nueva nota" notebook:self.notebook context:self.fetchedResultsController.managedObjectContext];
     //también podríamos conseguir el contexto de self.notebook.managedObjectContext. Todo objeto Core Data tiene asociado su contexto
 }
-     
+
+#pragma mark - Delegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    //Averiguar la nota
+    RCRNote *note = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    //Crear formulario de nota
+    RCRNoteViewController *nVC = [[RCRNoteViewController alloc] initWithModel:note];
+    
+    //Hacer el push
+    [self.navigationController pushViewController:nVC animated:YES];
+}
+
 @end
