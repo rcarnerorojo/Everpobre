@@ -9,12 +9,14 @@
 @import UIKit;
 @class RCRNote;
 
-@interface RCRPhotoViewController : UIViewController
+@interface RCRPhotoViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoView;
 
 - (IBAction)takePhoto:(id)sender;
 - (IBAction)deletePhoto:(id)sender;
+- (IBAction)vintagifyPhoto:(id)sender;
+
 
 -(id) initWithModel:(RCRNote*) model;
 

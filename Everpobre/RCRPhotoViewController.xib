@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -12,11 +12,12 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYM-sg-9yg">
-                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="OYM-sg-9yg">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
                         <barButtonItem systemItem="camera" id="lYX-oC-Ui0">
                             <connections>
@@ -24,6 +25,12 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="ADa-ic-WMP"/>
+                        <barButtonItem title="Vintage" id="L1P-zE-fZp">
+                            <connections>
+                                <action selector="vintagifyPhoto:" destination="-1" id="X3o-My-OsK"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="p0F-33-WlZ"/>
                         <barButtonItem systemItem="trash" id="cJq-kp-hYd">
                             <connections>
                                 <action selector="deletePhoto:" destination="-1" id="a6h-VX-db3"/>
@@ -31,20 +38,18 @@
                         </barButtonItem>
                     </items>
                 </toolbar>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sf7-bI-brq">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="sf7-bI-brq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="sf7-bI-brq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="19P-6r-2t2"/>
-                <constraint firstAttribute="trailing" secondItem="OYM-sg-9yg" secondAttribute="trailing" id="Xpt-C5-FAm"/>
-                <constraint firstAttribute="bottom" secondItem="OYM-sg-9yg" secondAttribute="bottom" id="gqB-D4-UTL"/>
-                <constraint firstItem="sf7-bI-brq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mKI-qZ-9pw"/>
-                <constraint firstAttribute="trailing" secondItem="sf7-bI-brq" secondAttribute="trailing" id="uM1-yD-tuB"/>
-                <constraint firstItem="OYM-sg-9yg" firstAttribute="top" secondItem="sf7-bI-brq" secondAttribute="bottom" id="vQd-Wy-QTU"/>
-                <constraint firstItem="OYM-sg-9yg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x1C-aA-2Ze"/>
-            </constraints>
+            <point key="canvasLocation" x="375" y="269"/>
         </view>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

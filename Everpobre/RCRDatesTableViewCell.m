@@ -41,7 +41,7 @@
     [super prepareForReuse];
     
     //Hay que darse de baja de las notificaciones de KVO!!!
-    [self removeObserver:self forKeyPath:RCRNoteAttributes.modificationDate];
+    [self.note removeObserver:self forKeyPath:RCRNoteAttributes.modificationDate];
 }
 
 -(void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{

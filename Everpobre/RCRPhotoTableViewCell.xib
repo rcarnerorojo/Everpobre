@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,10 +14,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlL-7a-zcM">
+                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hlL-7a-zcM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="319"/>
                     </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="hlL-7a-zcM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="5E7-3W-obi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hlL-7a-zcM" secondAttribute="bottom" constant="-8" id="Hgf-W8-T9w"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hlL-7a-zcM" secondAttribute="trailing" constant="-8" id="I1Y-rW-3nV"/>
+                    <constraint firstItem="hlL-7a-zcM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Qlw-G5-YNb"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="photoView" destination="hlL-7a-zcM" id="ET6-KC-5sJ"/>
