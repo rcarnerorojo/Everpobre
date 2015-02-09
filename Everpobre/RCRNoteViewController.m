@@ -97,6 +97,7 @@
         case NAME_SECTION:{
             RCRNameTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:[RCRNameTableViewCell cellId] forIndexPath:indexPath];
             [cell setNote:self.note];
+            cell.nameField.delegate = self;
             return cell;
             break;}
         case DATES_SECTION:{
@@ -107,6 +108,7 @@
         case TEXT_SECTION:{
             RCRTextTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[RCRTextTableViewCell cellId] forIndexPath:indexPath];
             [cell setNote:self.note];
+            cell.textView.delegate = self;
             return cell;
             break;}
         case PHOTO_SECTION:{
@@ -176,5 +178,33 @@
     }
 }
 
+#pragma mark - UITextFieldDelegate
+
+-(BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    
+    if ([textField.text  isEqual: @""]){
+        
+        [[[UIAlertView alloc] initWithTitle:@"Debes escribir un nombre" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        
+        return NO;
+    }else{
+        [self reloadInputViews];
+        return YES;
+    }
+}
+
+#pragma mark - UITextViewDelegate
+
+-(BOOL)textViewShouldEndEditing:(UITextView *)textView{
+    
+    if ([textView.text  isEqual: @""]){
+        
+        [[[UIAlertView alloc] initWithTitle:@"Debes escribir un texto" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        
+        return NO;
+    }else{
+        return YES;
+    }
+}
 
 @end

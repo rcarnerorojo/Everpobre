@@ -16,25 +16,25 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lI9-DU-aVy">
                         <rect key="frame" x="17" y="12" width="136" height="21"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
                         <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0g-Rh-ojv">
-                        <rect key="frame" x="176" y="11" width="136" height="21"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                        <rect key="frame" x="166" y="11" width="141" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
                         <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="S0g-Rh-ojv" firstAttribute="width" secondItem="lI9-DU-aVy" secondAttribute="width" id="6N2-ID-ra0"/>
+                    <constraint firstItem="S0g-Rh-ojv" firstAttribute="width" secondItem="lI9-DU-aVy" secondAttribute="width" constant="5" id="6N2-ID-ra0"/>
                     <constraint firstAttribute="bottomMargin" secondItem="lI9-DU-aVy" secondAttribute="bottom" constant="2" id="GsZ-li-d5v"/>
+                    <constraint firstItem="S0g-Rh-ojv" firstAttribute="leading" secondItem="lI9-DU-aVy" secondAttribute="trailing" constant="13" id="XHM-Cm-gIY"/>
                     <constraint firstAttribute="bottomMargin" secondItem="S0g-Rh-ojv" secondAttribute="bottom" constant="3" id="XSd-ou-Juy"/>
-                    <constraint firstItem="S0g-Rh-ojv" firstAttribute="leading" secondItem="lI9-DU-aVy" secondAttribute="trailing" constant="23" id="ZDV-ak-3FQ"/>
                     <constraint firstItem="lI9-DU-aVy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="aXG-4M-SB9"/>
                     <constraint firstItem="lI9-DU-aVy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="b9H-tm-Ofp"/>
-                    <constraint firstItem="S0g-Rh-ojv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="piA-GJ-BYp"/>
+                    <constraint firstItem="S0g-Rh-ojv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-5" id="piA-GJ-BYp"/>
                     <constraint firstItem="S0g-Rh-ojv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="ynW-oL-36I"/>
                 </constraints>
             </tableViewCellContentView>

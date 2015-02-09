@@ -9,7 +9,7 @@
 @import UIKit;
 
 @class RCRNote;
-@interface RCRNoteViewController : UITableViewController
+@interface RCRNoteViewController : UITableViewController <UITextFieldDelegate, UITextViewDelegate>
 
 @property (nonatomic, strong) RCRNote *note;
 

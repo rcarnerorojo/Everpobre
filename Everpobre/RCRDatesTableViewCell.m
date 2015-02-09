@@ -55,10 +55,11 @@
 -(void) syncNoteWithView{
     
     NSDateFormatter *fmt = [NSDateFormatter new];
-    fmt.dateStyle = NSDateFormatterShortStyle;
+    //fmt.dateStyle = NSDateFormatterShortStyle;
+    [fmt setDateFormat:@"yy-MM-dd HH:mm:ss:SSS"];
     self.creationDate.text = [fmt stringFromDate:self.note.creationDate];
     
-    fmt.dateStyle = NSDateFormatterFullStyle;
+    //fmt.dateStyle = NSDateFormatterFullStyle;
     self.modificationDate.text = [fmt stringFromDate:self.note.modificationDate];
 }
 
